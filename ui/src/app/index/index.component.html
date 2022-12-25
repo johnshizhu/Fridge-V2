@@ -1,0 +1,64 @@
+<div class="index-container">    
+    <div class="index-top-container">
+        <div class="index-left">
+            <div class="index-left-title-container">
+                <p class="index-left-title">Get Organized</p>
+                <p class="index-left-subtitle">Welcome to Fridge.</p>
+                <p class="index-left-title-desc">
+                    The Researcher centric platform that provides the tools to keep fridges 
+                    organized, stored and navigable. 
+                </p>
+                <div class="index-left-buttons-container">
+                    <div id="get-started-button">Get Started</div>
+                    <div id="github-link">
+                        <img id="github-icon" src="../../assets/github-logo.png" alt="Github Icon">
+                        <a href="https://github.com/johnshizhu" id="github-link-text">Github</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="index-right">
+            <div class="typewriter">
+                <div id="type-content">
+                    <div id="connection-type">Connecting to Server . . .</div>
+                    <br>
+                    <div id="successful-type">Connection Successful ***</div>
+                    <br>
+                    <div id="data-type">Data Retrieved --></div>
+                    <br>
+                    <p class="typing-body">Fridge:Danio | Box:CRISPR-Box-1 | Reagent:Taq-Polymerase |</p> 
+                    <p class="typing-body">Box:Top-10-Cells | Reagent:Saq-AI | Reagent:Fast-digest | </p>
+                    <p class="typing-body">Fridge:-80Degree | Box:John-Working | Fridge:Far-Freezer | </p>
+                    <p class="typing-body">Box:TOPO-Transformation | Reagent:PCR-Buff | Reagent:TFEB-</p>
+                    <p class="typing-body">Guide-12 | Reagent:UBB-guide-3 | Box:CRISPR-2 Box | Fridge:4-</p>
+                    <p class="typing-body">Degree | Box:Lysis-Buff | Reagent:Lysis-Buffer-1 | Fridge:Far-</p>
+                    <p class="typing-body">Minus-80 | Box:CRISPR-3 | Reagent:lancl2-Guide-4 |</p> 
+                    <p class="typing-body">Reagent:GFP-Primer-F/R</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="index-container-two">
+        <div class="index-container-two-top">
+            <div class="index-container-two-top-left">
+                <p class="index-container-two-title">Built by researchers, for researchers</p>
+                <p class="index-container-two-subtitle">
+                    Designed with ease of use, speed, and clarity in mind
+                    for even the most complex laboratory formats.
+                </p>
+                <ul class="function-list">
+                    <li class="function-list-item" (click)="loadFridge()">Fridge</li>
+                    <li class="function-list-item" (click)="loadBox()">Box</li>
+                    <li class="function-list-item" (click)="loadReagent()" id="reagent-item">Reagent</li>
+                </ul>
+            </div>
+            <div class="index-container-two-top-right">
+                <div id="container-two-right-content">
+                    {{containerTwoContentHeader}}
+                    <br><br>
+                    {{containerTwoContentBody}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
