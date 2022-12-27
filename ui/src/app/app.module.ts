@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NavBarIndexComponent } from './nav-bar-index/nav-bar-index.component';
 import { IndexComponent } from './index/index.component';
 import { IndexFooterComponent } from './index-footer/index-footer.component';
+import { Router, RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,11 @@ import { IndexFooterComponent } from './index-footer/index-footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot([
+      {path: 'nav-bar-index', component: NavBarIndexComponent},
+      {path: 'index', component: IndexComponent}
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
