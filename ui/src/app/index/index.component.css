@@ -170,6 +170,10 @@
     border-radius: 2em 2em 2em 0em;
 }
 #container-two-right-content {
-    margin: 1.5em 2em 2em 2em;
+    margin: 1.2em 2em 0em 2em;
     font-size: 1.5em;
+}
+#container-two-image {
+    height: 100%;
+    max-height: 7rem;
 }
